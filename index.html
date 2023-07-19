@@ -11,13 +11,26 @@
 
     <form id="create-task-form" action="" method="POST">
       <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+      <input type="text" id="taskInput" name="new-task-description" placeholder="Enter task">
+      
+      <button id="addButton">Add Task</button>
+      <input type="text" class="task-user" placeholder="User">
+      <input type="text" class="task-duration" placeholder="Duration">
+      <input type="date" class="task-date-due">
+      <button class="editButton">Edit</button>
+
+      <select class="task-priority">
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+
     </form>
 
     <div id="list">
       <h2>My Todos</h2>
-      <ul id="tasks">
+      <ul id="taskList">
+        <!-- Tasks will be added here dynamically -->
       </ul>
     </div>
 
